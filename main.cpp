@@ -23,8 +23,8 @@ void midAleatorio(int smt, int qtd){
     cout << "\nAleatórios gerados - \n" << endl;
     int quad = smt * smt;
     for(int i = 0; i < qtd; i++){
-        int left = quad % 1000 / 100; //1
-        int right = quad % 1000 % 100 / 10; //6
+        int left = quad % 1000 / 100; 
+        int right = quad % 1000 % 100 / 10;
         int r = (left * 10) + right;
         cout << r << endl;
         quad = r * r;
