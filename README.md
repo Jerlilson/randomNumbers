@@ -3,9 +3,9 @@ Implementação de números aleatórios em c++ utilizando os métodos MidSquare 
 
 Para Baixar o projeto:
 
->> Acesse o terminal
->> No terminal, acesse o diretório onde deseja guardar o projeto
->> Faça o clone do projeto digitando no terminal: git clone https://github.com/Jerlilson/randomNumbers.git
+>> Acesse o terminal <br />
+>> No terminal, acesse o diretório onde deseja guardar o projeto <br />
+>> Faça o clone do projeto digitando no terminal: git clone https://github.com/Jerlilson/randomNumbers.git 
 
 Para compilar o projeto:
 
@@ -15,10 +15,9 @@ Para executar o projeto:
 
 >> Digite no terminal: ./executavel
 
+Observações:
 
-
-//Observações
-O código referente ao Algoritmo congruencial contém 3 variáveis que auxiliam no processo de geração da aleatoriedade dos 
+>> O código referente ao Algoritmo congruencial contém 3 variáveis que auxiliam no processo de geração da aleatoriedade dos 
 números, a, c e m, se houver necessidade de alterar esses parametros devem ser modificados os valores dessas variáveis definidas estaticamente.  
 
 
