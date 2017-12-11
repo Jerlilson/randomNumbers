@@ -36,49 +36,49 @@ int main(){
     int opt;
     int start;
 
+    cout << "------------\n";
+    cout << "1 - Método da Congruência \n";
+    cout << "2 - Método da Mid Square \n";
+    cout << "0 - Sair \n";
+    cout << "------------\n";
+    cout << "Escolha o método desejado para gerar os números aleatórios: ";
+    cin >> opt;
+
     while(opt != 0){
+        cout << "Digite a quantidade de números aleatórios a serem gerados: ";
+        cin >> qtd;
+        cout << "Deseja informar uma semente? 1-(Sim) | 2-(Não): ";
+        cin >> start;
+        if(start == 1){
+            cout << "Informe uma semente: ";
+            cin >> smt;
+        }else{
+            if (opt == 1){
+                smt = 194;
+            }
+            else{
+                smt = 76;
+            }
+        }
+
+        switch (opt){
+            case 1:
+                congAleatorio(smt, qtd); break;
+
+            case 2:
+                midAleatorio(smt, qtd); break;
+
+            default:
+                cout << "Opção inválida digite uma opção inválida: ";
+        }
+
         cout << "------------\n";
         cout << "1 - Método da Congruência \n";
         cout << "2 - Método da Mid Square \n";
         cout << "0 - Sair \n";
         cout << "------------\n";
-        cout << "Escolha o método desejado para gerar os números aleatórios" << endl;
+        cout << "Escolha o método desejado para gerar os números aleatórios: ";
         cin >> opt;
-
-        switch (opt){
-            case 1:
-                cout << "Digite a quantidade de números aleatórios a serem gerados: \n";
-                cin >> qtd;
-                cout << "Deseja informar uma semente? \n1 - (Sim) | 2 (Não) " << endl;
-                cin >> start;
-                if(start == 1){
-                    cout << "Informe uma semente: \n";
-                    cin >> smt;
-                    congAleatorio(smt, qtd);
-                }else{
-                    congAleatorio(194, qtd);
-                }
-            break;
-
-            case 2:
-                cout << "Digite a quantidade de números aleatórios a serem gerados: \n";
-                cin >> qtd;
-                cout << "Deseja informar uma semente? \n1 - (Sim) | 2 (Não) " << endl;
-                cin >> start;
-                if(start == 1){
-                    cout << "Informe uma semente: \n";
-                    cin >> smt;
-                    midAleatorio(smt, qtd);        
-                }else{
-                    midAleatorio(76, qtd);        
-                }
-            case 0:
-                
-            break;
-
-            default:
-            cout << "Opção inválida digite uma opção inválida" << endl;
-        }
     }
     
     return 0;
